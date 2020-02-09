@@ -10,11 +10,11 @@ final int NUM_OF_FLAKES = 400;
 
 void setup() {
     zOffset = 0;
-    brightness = 0.0;
+    brightness = 30.0;
     windMultiplier = 0.03;
     
     size(980,690);
-    gravity = new PVector(0, 1); // 0.05 instead of 1
+    gravity = new PVector(0.0, 0.05);
     for (int i = 0; i < NUM_OF_FLAKES; i++) {
         int x = int(random(width));
         int y = int(random(height));
